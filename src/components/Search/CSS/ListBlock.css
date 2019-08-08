@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+/* https://fonts.google.com/specimen/Noto+Sans+TC?selection.family=Noto+Sans+TC */
+
+.mainStyle {
+    /*main shape*/
+    width: 80%;
+    height: 100%;
+    border-style: dashed;
+    border-radius: 20px;
+    border-width: 5px;
+
+    /*main color*/
+    background-color: rgba(73, 73, 73, 1);
+    border-color: rgb(0, 1, 83, 0.5);
+
+    /*main content*/
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+
+.boxStyle {
+    /*box shape*/
+    width: 300px;
+    height: 100px;
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 0px rgb(0, 0, 0);
+
+    /*box color*/
+    background-color: rgba(0, 110, 255, 0.767);
+
+    /*box content*/
+    padding: 25px 25px 25px 25px;
+    margin: 25px 25px 25px 25px;
+
+    /*text content*/
+    font-size: 0.5em;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: black;
+    text-align: center;
+
+    /*CSS animate*/
+    transition: all 0.2s ease-in-out;
+}
+
+.boxStyle:hover {
+    background-color: rgba(0, 255, 64, 0.767);
+    box-shadow: 2.5px 2.5px 5px 0px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 600px) {
+    .mainStyle {
+        /*main shape*/
+        width: 100%;
+        border-style: none;
+        border-radius: 0px;
+        border-width: 0px;
+
+        /*main color*/
+        background-color: rgb(124, 121, 121);
+    }
+
+    .boxStyle {
+        /*box shape*/
+        max-width: 80%;
+        height: 70px;
+        border-style: none;
+        border-radius: 10px;
+
+        /*box color*/
+        background-color: rgba(0, 110, 255, 0.767);
+        box-shadow: 1px 1px 2px 0px rgb(0, 0, 0);
+
+        /*box content*/
+        padding: 15px 15px 15px 15px;
+        margin: 15px 15px 15px 15px;
+    }
+}

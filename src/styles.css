@@ -1,0 +1,9 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  color: cyan;
+  background-color: rgb(0, 0, 0);
+}
