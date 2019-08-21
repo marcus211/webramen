@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import AppRouter from "./AppRouter";
-import Contact from "./components/Contact";
-
+import Contact from "./Contact";
+// import 'bootstrap/dist/css/bootstrap.css';
 import "./styles.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>AppRouter test</h1>
       <AppRouter />
       <Contact />
     </div>

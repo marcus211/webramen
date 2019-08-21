@@ -10,29 +10,27 @@ import styled from "styled-components";
 
 const NavDiv = styled.div`
   overflow: hidden;
-  background-color: gray;
+  background-color: rgb(54, 54, 54);
 `;
 const ATag = styled.a`
   float: left;
   width: 100px;
+  font-size: 1.2em;
   border-radius: 10px;
   padding: 15px 10px;
   margin: 5px 5px 5px 5px;
-  text-decoration: underline;
-  font-size: 20px;
-  color: white;
-  background: green;
+  background: rgb(54,54,54);
   transition: 0.1s all ease-out;
   &:hover {
     position: relative;
     top: -1px;
-    background: lightseagreen;
+    background: rgb(108,108,108);
     box-shadow: 2.5px 2.5px 5px 0px #000000;
   }
   &:active {
     position: relative;
     top: 0px;
-    background: yellow;
+    background: white;
     box-shadow: 0px 0px 0px 0px #000000;
   }
 `;
@@ -45,13 +43,13 @@ function AppRouter() {
     <Router>
       <NavDiv>
         <Link to="/">
-          <ATag>Home</ATag>
+          <ATag>拉麵找</ATag>
         </Link>
         <Link to="/MapBase/">
-          <ATag>MapBase</ATag>
+          <ATag>地圖找</ATag>
         </Link>
         <Link to="/About/">
-          <ATag>About</ATag>
+          <ATag>關於本站</ATag>
         </Link>
         <BoxRight>
           <Link to="/Users/">

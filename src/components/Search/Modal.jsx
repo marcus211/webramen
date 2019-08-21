@@ -5,34 +5,39 @@ import { FadeIn } from "animate-css-styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-//react-mapbox-gl
-import ReactMapboxGl, { Marker, ZoomControl, ScaleControl, RotationControl, } from "react-mapbox-gl";
-import markerUrl from "../img/icon/ramen.png";
+//@urbica/react-map-gl
+import MapGL, { FullscreenControl, GeolocateControl, NavigationControl, ScaleControl, Marker } from "@urbica/react-map-gl";
+import imgUrl from "./icon/ramen.png";
 //Modal CSS
-import "./CSS/Modal.css";
+import "./css/Modal.css";
 
 library.add(faTimes);
 
+const MapToken = "pk.eyJ1Ijoic2t5bnVyYWsiLCJhIjoiY2pqdTZydW1rOGtxdTNwczJmdm5henRndiJ9.VKA1MVztPqrirg-ZKBQGsw";
+
+
 class Modal extends Component {
+    state = {
+        viewport: {
+            latitude: this.props.geoY,
+            longitude: this.props.geoX,
+            zoom: 17
+        }
+    };
 
     render() {
         const textTitle = this.props.name
         const textContent = this.props.text
-        const Map = ReactMapboxGl({
-            accessToken:
-                "pk.eyJ1Ijoic2t5bnVyYWsiLCJhIjoiY2pqdTZydW1rOGtxdTNwczJmdm5henRndiJ9.VKA1MVztPqrirg-ZKBQGsw"
-        });
+
         return (
             <React.Fragment>
                 {this.props.show && (
                     <FadeIn duration="0.4s">
-
                         <div className="outerModal">
                             <div className="innerModal">
                                 <div className="title" dangerouslySetInnerHTML={{ __html: textTitle }} />
                                 <div className="innerContent">
                                     <ScrollLock />
-
                                     <div className="scrollContent">
                                         <TouchScrollable>
                                             <div className="hiddenScroll" dangerouslySetInnerHTML={{ __html: textContent }} />
@@ -40,33 +45,43 @@ class Modal extends Component {
                                     </div>
 
                                     <div className="mapContent">
-                                        <Map
-                                            style={`mapbox://styles/mapbox/streets-v9`}
-                                            containerStyle={{
-                                                border: 'none',
-                                                margin: '0px 0px 0px 0px',
-                                                width: '100%',
-                                                height: '100%'
-                                            }}
-                                            center={[this.props.geoX, this.props.geoY]}
-                                            zoom={[17]}
+                                        <MapGL
+                                            style={{ width: "100%", height: "100%" }}
+                                            mapStyle="mapbox://styles/mapbox/streets-v10"
+                                            accessToken={MapToken}
+                                            latitude={this.props.geoY}
+                                            longitude={this.props.geoX}
+                                            zoom={this.state.viewport.zoom}
+                                            onViewportChange={viewport => this.setState({ viewport })}
                                         >
                                             <Marker
-                                                coordinates={[this.props.geoX, this.props.geoY]}
-                                                anchor="center">
-                                                <img src={markerUrl} style={{
-                                                    width: '50px',
-                                                    height: '36px',
-                                                }} alt='' />
+                                                latitude={this.props.geoY}
+                                                longitude={this.props.geoX}
+                                                offsetLeft={-25}
+                                                offsetTop={-18}
+                                            >
+                                                <img
+                                                    src={imgUrl}
+                                                    style={{
+                                                        width: "50px",
+                                                        height: "36px"
+                                                    }}
+                                                    alt=""
+                                                />
                                             </Marker>
-                                            <ZoomControl position={`top-left`} />
-                                            <ScaleControl position={`bottom-right`} style={{ bottom: 30 }} />
-                                            <RotationControl position={`top-left`} style={{ top: 65 }} />
-                                        </Map>
+
+                                            <FullscreenControl position="top-right" />
+                                            <NavigationControl showCompass showZoom position="top-left" />
+                                            <GeolocateControl
+                                                position="top-left"
+                                                positionOptions={{ enableHighAccuracy: true, timeout: 6000 }}
+                                                trackUserLocation="true"
+                                            />
+                                            <ScaleControl unit="metric" position="bottom-right" maxWidth="100" />
+
+                                        </MapGL>
                                     </div>
-
                                 </div>
-
                                 <span className="crossButton" onClick={this.props.onHide}>
                                     <FontAwesomeIcon icon={faTimes} />
                                 </span>

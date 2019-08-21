@@ -7,7 +7,6 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 500;
 }
 
 .innerModal {
@@ -18,13 +17,12 @@
   left: 50px;
   padding: 50px 50px 50px 50px;
   box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(216, 216, 216, 1);
   border-radius: 20px;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Noto Sans TC", sans-serif;
   color: black;
   text-align: center;
-  z-index: 600;
 }
 
 .title {
@@ -54,6 +52,7 @@
   overflow: hidden;
   text-align: justify;
 }
+
 .hiddenScroll {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -61,6 +60,7 @@
   margin: 0px -300px 0px 0px;
   padding-right: 300px;
 }
+
 .mapContent {
   color: rgb(50, 50, 50);
   /* border: 1px solid; */

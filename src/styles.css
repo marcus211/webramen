@@ -1,9 +1,25 @@
 .App {
   display: flex;
   flex-direction: column;
+  width: 100%;
   min-height: 100vh;
-  font-family: sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   text-align: center;
-  color: cyan;
-  background-color: rgb(0, 0, 0);
+  /* 背景色 */
+  /* background-color: rgb(255, 0, 0); */
+  background-image: url("../src/components/img/bg/bg001.JPG");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
 }

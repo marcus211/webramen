@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import posed from "react-pose";
 import styled from "styled-components";
-
-import Modal from './Modal.jsx';
-import "./CSS/ListBlock.css";
+import Modal from './Modal';
+import "./css/ListBlock.css";
 
 /*styled-components component*/
 const PressBotton = styled.button`
@@ -87,7 +86,8 @@ class ListBlock extends React.Component {
                 {this.props.inputData.map((d, i) => {
                     return <BoxAnimate>
                         <div key={i} className="boxStyle">
-                            <h1>{d.properties.Name}</h1>
+                            {d.properties.Name}<br />
+                            區域：{d.properties.area}<br />
                             <PressBotton onClick={() => this.getModal(d.properties.Name)}>
                                 Open
                             </PressBotton>
