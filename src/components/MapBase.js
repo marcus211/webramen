@@ -30,7 +30,7 @@ class MapBase extends React.Component {
     componentWillMount() {
         axios.get(URL)// JSON File Path
             .then((d) => {
-                console.log(JSON.stringify(d));
+                // console.log(JSON.stringify(d));
                 this.setState({
                     MapList: d.data.features,
                 });
@@ -51,6 +51,7 @@ class MapBase extends React.Component {
             color: "rgb(255,255,255)",
             background: "green",
             borderRadius: "5px",
+            borderWidth: "2px",
             textAlign: "center"
         };
         const ClusterMarker = ({ longitude, latitude, pointCount }) => (
@@ -72,7 +73,7 @@ class MapBase extends React.Component {
 
         return (
             <MapGL
-                style={{ width: "100%", height: "80vh" }}
+                style={{ width: "100%", height: "90vh" }}
                 mapStyle="mapbox://styles/mapbox/streets-v10"
                 accessToken={MapToken}
                 latitude={this.state.viewport.latitude}

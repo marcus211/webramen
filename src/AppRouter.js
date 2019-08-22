@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import MapBase from "./components/MapBase";
 import About from "./components/About";
-import Users from "./components/Users";
 import styled from "styled-components";
 
 //reference https://codesandbox.io/s/ppoo7yn5qj
@@ -14,10 +13,10 @@ const NavDiv = styled.div`
 `;
 const ATag = styled.a`
   float: left;
-  width: 100px;
+  width: 90px;
   font-size: 1.2em;
   border-radius: 10px;
-  padding: 15px 10px;
+  padding: 10px 10px;
   margin: 5px 5px 5px 5px;
   background: rgb(54,54,54);
   transition: 0.1s all ease-out;
@@ -48,19 +47,15 @@ function AppRouter() {
         <Link to="/MapBase/">
           <ATag>地圖找</ATag>
         </Link>
-        <Link to="/About/">
-          <ATag>關於本站</ATag>
-        </Link>
         <BoxRight>
-          <Link to="/Users/">
-            <ATag>Users</ATag>
+          <Link to="/About/">
+            <ATag>關於本站</ATag>
           </Link>
         </BoxRight>
       </NavDiv>
       <Route path="/" exact component={Home} />
       <Route path="/MapBase/" component={MapBase} />
       <Route path="/About/" component={About} />
-      <Route path="/Users/" component={Users} />
     </Router>
   );
 }

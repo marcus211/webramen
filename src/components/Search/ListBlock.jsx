@@ -9,18 +9,27 @@ import "./css/ListBlock.css";
 const PressBotton = styled.button`
   width: 60px;
   height: 30px;
-  color: white;
+  font-size: 0.8em;
+  font-family: "Noto Sans TC", sans-serif;
+  border: none;
   border-radius: 5px;
-  border-style:none;
-  background: black;
-  box-shadow: 1px 1px 2px 0px rgb(0, 0, 0);
+  background: rgb(216,216,216);
+  margin:5px 5px 5px 5px;
+  transition: 0.1s all ease-out;
   :hover {
-    background: gray;
-    box-shadow: 2.5px 2.5px 5px 0px rgb(0, 0, 0);
+    position: relative;
+    top: -2px;
+    background: rgb(108,108,108);
+    box-shadow: 2.5px 2.5px 5px 0px #000000;
   }
   :active {
-    background: white; 
-    box-shadow: 1px 1px 2px 0px rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    background: rgb(54,54,54);
+    box-shadow: 0px 0px 0px 0px #000000;
+  }
+  :focus {
+    outline:0;
   }
 `;
 
