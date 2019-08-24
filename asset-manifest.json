@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/webramen/static/css/main.2fdc27fc.chunk.css",
-    "main.js": "/webramen/static/js/main.cd7cd9a3.chunk.js",
-    "main.js.map": "/webramen/static/js/main.cd7cd9a3.chunk.js.map",
+    "main.js": "/webramen/static/js/main.93070f3d.chunk.js",
+    "main.js.map": "/webramen/static/js/main.93070f3d.chunk.js.map",
     "runtime~main.js": "/webramen/static/js/runtime~main.69d9310e.js",
     "runtime~main.js.map": "/webramen/static/js/runtime~main.69d9310e.js.map",
     "static/css/2.5c17b9f1.chunk.css": "/webramen/static/css/2.5c17b9f1.chunk.css",
     "static/js/2.b8b4b815.chunk.js": "/webramen/static/js/2.b8b4b815.chunk.js",
     "static/js/2.b8b4b815.chunk.js.map": "/webramen/static/js/2.b8b4b815.chunk.js.map",
     "index.html": "/webramen/index.html",
-    "precache-manifest.246a48b4f5eab303fbd11bd91c86cac8.js": "/webramen/precache-manifest.246a48b4f5eab303fbd11bd91c86cac8.js",
+    "precache-manifest.8ccdc35a5ebca7b48c6982f36375a072.js": "/webramen/precache-manifest.8ccdc35a5ebca7b48c6982f36375a072.js",
     "service-worker.js": "/webramen/service-worker.js",
     "static/css/2.5c17b9f1.chunk.css.map": "/webramen/static/css/2.5c17b9f1.chunk.css.map",
     "static/css/main.2fdc27fc.chunk.css.map": "/webramen/static/css/main.2fdc27fc.chunk.css.map",
