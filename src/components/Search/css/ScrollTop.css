@@ -1,0 +1,27 @@
+/*uparrow*/
+.uparrow {
+  color: rgb(255, 255, 255);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  font-size: 3em;
+  bottom: 20px;
+  right: 20px;
+  transition: all 200ms;
+  z-index: 1000;
+}
+
+.uparrow.arrowmove {
+  right: -200px;
+}
+
+.uparrow:hover {
+  color: rgb(200, 230, 235);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+  transition: scale(1.5);
+  transform: scale(1.5);
+}
+
+.uparrow:active {
+  color: rgb(0, 80, 140);
+}
