@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/webramen/index.html/static/css/main.69250bc9.chunk.css",
-    "main.js": "/webramen/index.html/static/js/main.2ffae362.chunk.js",
-    "main.js.map": "/webramen/index.html/static/js/main.2ffae362.chunk.js.map",
-    "runtime~main.js": "/webramen/index.html/static/js/runtime~main.54039ac1.js",
-    "runtime~main.js.map": "/webramen/index.html/static/js/runtime~main.54039ac1.js.map",
-    "static/css/2.5c17b9f1.chunk.css": "/webramen/index.html/static/css/2.5c17b9f1.chunk.css",
-    "static/js/2.ac1ae6f0.chunk.js": "/webramen/index.html/static/js/2.ac1ae6f0.chunk.js",
-    "static/js/2.ac1ae6f0.chunk.js.map": "/webramen/index.html/static/js/2.ac1ae6f0.chunk.js.map",
-    "index.html": "/webramen/index.html/index.html",
-    "precache-manifest.9d925c5dd2a8296a14806bffcd99c892.js": "/webramen/index.html/precache-manifest.9d925c5dd2a8296a14806bffcd99c892.js",
-    "service-worker.js": "/webramen/index.html/service-worker.js",
-    "static/css/2.5c17b9f1.chunk.css.map": "/webramen/index.html/static/css/2.5c17b9f1.chunk.css.map",
-    "static/css/main.69250bc9.chunk.css.map": "/webramen/index.html/static/css/main.69250bc9.chunk.css.map",
-    "static/media/styles.css": "/webramen/index.html/static/media/bg001.1d98439b.JPG"
+    "main.css": "/webramen/static/css/main.68f2860e.chunk.css",
+    "main.js": "/webramen/static/js/main.2ffae362.chunk.js",
+    "main.js.map": "/webramen/static/js/main.2ffae362.chunk.js.map",
+    "runtime~main.js": "/webramen/static/js/runtime~main.69d9310e.js",
+    "runtime~main.js.map": "/webramen/static/js/runtime~main.69d9310e.js.map",
+    "static/css/2.5c17b9f1.chunk.css": "/webramen/static/css/2.5c17b9f1.chunk.css",
+    "static/js/2.7c33a513.chunk.js": "/webramen/static/js/2.7c33a513.chunk.js",
+    "static/js/2.7c33a513.chunk.js.map": "/webramen/static/js/2.7c33a513.chunk.js.map",
+    "index.html": "/webramen/index.html",
+    "precache-manifest.72ced4a4b19c7e10acb1b527d957d6ad.js": "/webramen/precache-manifest.72ced4a4b19c7e10acb1b527d957d6ad.js",
+    "service-worker.js": "/webramen/service-worker.js",
+    "static/css/2.5c17b9f1.chunk.css.map": "/webramen/static/css/2.5c17b9f1.chunk.css.map",
+    "static/css/main.68f2860e.chunk.css.map": "/webramen/static/css/main.68f2860e.chunk.css.map",
+    "static/media/styles.css": "/webramen/static/media/bg001.1d98439b.JPG"
   }
 }
